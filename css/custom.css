@@ -195,6 +195,26 @@ body{
 
 
 
+@media screen and (min-width: 1200px) {
+    .navbar-apphour .nvb-space-item {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+
+    .nvb-btn{
+        border-radius: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .navbar-nav .bubbly-button {
+        max-width: 25%;
+        border-radius: 1.8rem;
+    }
+}
+
+}
+
 .nav-item
 {
 
@@ -213,6 +233,7 @@ body{
 {
     color: #e73739;
     text-shadow: 0 0 5px #e73739;
+    font-size: 1.2rem;
 
 }
 
@@ -266,12 +287,12 @@ body{
 }
 
 #footerHappy a:hover {
-    color:white;
+    color:#e73739;
     text-decoration: none;
 }
 
 #footerHappy a {
-    color:#4e2336;
+    color:#646464;
     font-size: 1rem;
 }
 
@@ -363,7 +384,7 @@ body{
 
 #col-valores p{
     color: #212529;
-padding: 10px 0 20px 30px;
+    padding: 10px 0 20px 30px;
     font-family: 'Comfortaa', cursive;
 }
 
@@ -462,3 +483,55 @@ padding: 10px 0 20px 30px;
 }
 
 /*  FIM FORMULARIO CONTATO */
+
+
+
+.footer-store-icons{
+    padding-top: 90px;
+}
+
+.img-vamos{
+    max-width: 110%;
+    padding-top: 40px;
+}
+
+#icone-footer{
+    width: 200px;
+    left: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .img-vamos{
+        max-width: 105%;
+        padding-top: 30px;
+        padding-top: 30px;
+    }
+
+    #icone-footer {
+        width: 100px;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .footer-store-icons{
+        padding-top: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+  
+    .img-vamos{
+         max-width: 100%;
+        padding-top: 20px;
+        padding-top: 20px;
+    }
+
+    #icone-footer {
+        width: 60px;
+        left: 10px;
+    }
+
+}

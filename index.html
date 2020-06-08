@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <link href="css/custom.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/b73ddf633b.js" crossorigin="anonymous"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet"> 
@@ -26,14 +27,15 @@
             <nav class="navbar navbar-expand-lg navbar-apphour">
                 <a class="navbar-brand" href="#"><img src="img/icone_branco_vermelho.png" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" style="color: #ff3133;"> <i class="fas fa-bars" ></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">  nosso app  <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">como funcionamos</a>
-                        <a class="nav-item nav-link" href="#">estabelecimentos</a>
-                        <a class="nav-item nav-link" href="#">contato</a>        
+                        <div class="nvb-space-item"><a class="nav-item nav-link active" href="#"> Quem somos<span class="sr-only">(current)</span></a></div>
+                        <div class="nvb-space-item"> <a class="nav-item nav-link" href="#">Simbologia</a></div>
+                        <div class="nvb-space-item"><a class="nav-item nav-link" href="#">Nosso propósito</a></div>
+                        <div class="nvb-space-item"><a class="nav-item nav-link" href="#">Fale conosco</a></div>
+                        <button class="bubbly-button  nvb-btn">Entrar</button>     
                     </div>
                 </div>
             </nav>
@@ -177,7 +179,7 @@
             <div class="row">
                 <div class="col-md-6" style="padding-top: 50px;">
                     <h2>Do ponto de vista do estabelcimento, o objetivo é <strong>aumentar o público de alcance.</strong>  </h2>
-                   
+
                     <h2 style="padding-top: 50px;">maximizar <br><strong> resultados</strong> </h2>
                     <p>Criar fidelização de clientes; propgadanda orgânica; reforçar presença da marca no mundo digital; analisar os preços da concorrência e qualidade de serviços oferecidos pelos outros estabelcimentos.</p>
                 </div>
@@ -211,7 +213,7 @@
                         <li>Pagamento por boleto bancário</li>
                         <li>Pagamento por cartão de crédito</li>
                     </ul> 
-                     <p>* A forma de pagamento é recorrente.</p>
+                    <p>* A forma de pagamento é recorrente.</p>
                     <div style="padding-top: 30px">
                         <button class="bubbly-button" id="btn-amigo">Seja um Estabelcimento Amigo</button> 
                     </div>
@@ -229,33 +231,33 @@
                 </div>
 
                 <div class="col-md-12">
-           <form method="post">
-               <div class="row">
-                    <div class="offset-md-3 col-md-6 col-12 contact-form">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Nome*" value="" />
+                    <form method="post">
+                        <div class="row">
+                            <div class="offset-md-3 col-md-6 col-12 contact-form">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Nome*" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtEmail" class="form-control" placeholder="Email*" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtPhone" class="form-control" placeholder="Telefone*" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Assunto*" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Mensagem*" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+                                </div>
+
+                            </div>
+
+
                         </div>
-                        <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Email*" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Telefone*" value="" />
-                        </div>
-                         <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Assunto*" value="" />
-                        </div>
-                         <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Mensagem*" style="width: 100%; height: 150px;"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
-                        </div>
-                        
-                    </div>
-                   
-                  
-                </div>
-            </form>
+                    </form>
                 </div>
 
             </div>
@@ -264,28 +266,34 @@
 
 
     <div id="footerHappy" class="">
-          <img class="image1" id="img-footer" src="img/rodapevermelha.png" style=" width:40%; position:absolute;left:0;" />
-        <img class="image1" id="icone-footer" src="img/icone_azul_branco.png" style=" width:200px; position:absolute;left:50px;" />
-        
+        <img class="image1" id="img-footer" src="img/rodapevermelha.png" style=" width:40%; position:absolute;left:0;" />
+        <img class="image1" id="icone-footer" src="img/icone_azul_branco.png" style=" position:absolute;" />
+
         <div class="container" >
-            <div class="row">
-                <div class="col-md-4" >
-                   
+            <div class="row justify-content-end" >
+                <div class="col-sm-3 col-0" >
+
                 </div>
-                <div class="col-md-3" >
+                <div class="col-sm-3 col-6" >
                     <p> <a href="">Quem somos</a></p>
-                     <p> <a href="">Simbologia</a></p>
+                    <p> <a href="">Simbologia</a></p>
                     <p> <a href="">Nosso proposito</a></p>
                     <p> <a href="">Mensalidade</a></p>
                     <p> <a href="">Estabelcimentos</a></p>
                     <p> <a href="">Fale conosco</a></p>
                 </div>
-                <div class="col-md-3" >
+                <div class="col-sm-3 col-6" >
                     <p> <a href="">Termos de uso </a></p>
                     <p> <a href="">Políticas de privacidade </a></p>
+                    <a href="" target="_blank"><i class="fab fa-facebook-square fa-5x" style="margin-right: 10px;color:#646464"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-instagram-square fa-5x" style="color:#646464" ></i></a>
                 </div>
-                <div class="col-md-2" >
-                    <a href='https://play.google.com/store/apps/details?id=com.hw.silentfree&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/pt-br_badge_web_generic.png' style="max-width:100%"/></a>
+              
+                <div class="col-sm-3 col-6  footer-store-icons"  >
+                    <a target="_blank" href='https://play.google.com/store/apps/details?id=com.hw.silentfree&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='img/apple%20store.png' style="max-width:100%;margin-bottom: 20px"/></a>
+               
+                    <a target="_blank" href='https://play.google.com/store/apps/details?id=com.hw.silentfree&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='img/play.png' style="max-width:100%"/></a>
+                    <img src="img/vamos.png" class="img-vamos">
                 </div>
             </div>
         </div>

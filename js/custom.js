@@ -1,3 +1,20 @@
+/* NAVBAR */
+
+var  mn = $(".navbar.navbar-default");
+var  mns = "navbar-fixed-top";
+var hdr = $(window).height(); 
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > (hdr) ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
+
+/* FIM NAVBAR*/
+
+
 var animateButton = function (e) {
 e.preventDefault;
   //reset animation
@@ -31,6 +48,7 @@ window.onload = function() {
 
 window.onresize = function(){
     paddingpercentual();
+    imagemfooter();
 }
 
 
