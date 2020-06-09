@@ -72,7 +72,8 @@ body{
     margin:auto;
     display:block;
     border-radius: 2rem !important;
-    border: 3px solid #312F4A !important;
+    border: 0px solid #312F4A !important;
+    margin-bottom: 12px;
 }
 
 
@@ -515,6 +516,10 @@ body{
         padding-top: 0px;
     }
 
+    #arco-vermelho{
+        max-width: 150px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -537,4 +542,10 @@ body{
     position: absolute;
     left: 0px;
     max-width: 200px;
+}
+
+#arco-azul{
+        max-width: 530px;
+    width: 80%;
+    padding-bottom: 50px
 }

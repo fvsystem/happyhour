@@ -35,7 +35,7 @@ for (var i = 0; i < bubblyButtons.length; i++)
 
 
 $(document).ready(function() {
-    imagemfooter();
+    //  imagemfooter();
 });
 
 
@@ -45,6 +45,7 @@ $("#transicao-branco")
 window.onload = function() {
     marginpercentual();
     planosAlinhamentos( window.innerWidth);
+    imagemfooter();
 };
 
 window.onresize = function(){
@@ -62,7 +63,7 @@ function marginpercentual(){
 
 function imagemfooter(){
 
-    var alturatela = $('body').height();
+    var alturatela = $('#header').height() + $('#main').height() + $('#navbarHappy').height();
     var alturaimagem = $('#img-footer').height();
     var alturaicone = $('#icone-footer').height();
     $('#img-footer').css('top', (alturatela-alturaimagem)+'px');
@@ -73,14 +74,28 @@ function imagemfooter(){
 
 function planosAlinhamentos(larguratela){
     if(larguratela > 576){
+
         var alturaPlanoPremium = $('#planoPREMIUM').innerHeight();
+        $('#planos').css('padding-left','15px');
 
         $("#planoPRO").css('min-height',alturaPlanoPremium+'px');
         $("#planoBASICO").css('min-height',alturaPlanoPremium+'px');
-    }else
+
+
+        if((larguratela < 1537) && (larguratela > 1100))
+        {
+            $('#planos').css('padding-left','150px');
+        }
+        else if((larguratela < 1099) && (larguratela > 577))
+        {
+            $('#planos').css('padding-left','190px');
+        }
+    }
+    else
     {
-        var martintopBasico = $('#arco-vermelho').height();
-        $("#divPlanoBasico").css("margin-top", (martintopBasico-150)+'px');
+         $('#planos').css('padding-left','15px');
+        var margintopBasico = $('#arco-vermelho').height();
+        $("#divPlanoBasico").css("margin-top", (margintopBasico-150)+'px');
         $("#divPlanoPro").css("margin-top","50px");
         $("#divPlanoPremium").css("margin-top","50px");
 
