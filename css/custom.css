@@ -67,14 +67,12 @@ body{
 }
 
 
-#btn-amigo{
-    border-radius: 2rem 2rem 2rem 2rem;
-    padding: 10px 30px; 
-    background-color: #e73739;
-    border-color: #e73739;
-    color: white;
+.btn-amigo{
+
     margin:auto;
     display:block;
+    border-radius: 2rem !important;
+    border: 3px solid #312F4A !important;
 }
 
 
@@ -369,22 +367,21 @@ body{
 
 #contato {
     background: #f4f4f4;
-    padding-bottom: 50px;
+    padding: 80px 0;
 }
 
 .valores{
     margin-top: -200px;
 }
 
-#col-valores h3{
-    font-size: 4em;
+#planos h3{
+    font-size: 2em;
     font-family: 'Comfortaa', cursive;
 }
 
 
-#col-valores p{
+#planos p{
     color: #212529;
-    padding: 10px 0 20px 30px;
     font-family: 'Comfortaa', cursive;
 }
 
@@ -397,22 +394,21 @@ body{
     font-size: 0.3em;
 }
 
-#col-valores li{
-    font-size: 1.5em;
+#planos li{
+    font-size: 1.0em;
     font-family: 'Comfortaa', cursive;
 }
 
-#col-valores ul {
+#planos ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 
-#col-valores li::before {
+#planos li::before {
     content: "• ";
     color: red; /* or whatever color you prefer */
-    padding-right: 15px;
     font-size: 1.2em;
     line-height: 1em;
 }
@@ -522,9 +518,9 @@ body{
 }
 
 @media only screen and (max-width: 768px) {
-  
+
     .img-vamos{
-         max-width: 100%;
+        max-width: 100%;
         padding-top: 20px;
         padding-top: 20px;
     }
@@ -534,4 +530,11 @@ body{
         left: 10px;
     }
 
+}
+
+
+#arco-vermelho{
+    position: absolute;
+    left: 0px;
+    max-width: 200px;
 }
