@@ -1,14 +1,14 @@
 /* NAVBAR */
 
-var  mn = $(".navbar.navbar-default");
+var  mn = $(".no-gutters");
 var  mns = "navbar-fixed-top";
-var hdr = $(window).height(); 
+var hdr = 76; 
 
 $(window).scroll(function() {
     if( $(this).scrollTop() > (hdr) ) {
-        mn.addClass(mns);
+      $(".navbar-apphour").css('background-color','#382f49');
     } else {
-        mn.removeClass(mns);
+       $(".navbar-apphour").css('background-color','transparent');
     }
 });
 

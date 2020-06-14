@@ -76,6 +76,14 @@ body{
     margin-bottom: 12px;
 }
 
+.img-card{
+    max-width: 100%;
+}
+
+.txt-card{
+    text-align: center;
+}
+
 
 #btn-juntese
 {
@@ -201,8 +209,28 @@ body{
     }
 
     .nvb-btn{
-        border-radius: 1.8rem;
+        border-radius: 1.7rem;
     }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .navbar-apphour .nvb-space-item {
+        padding-left: 1rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .nvb-btn{
+        border-radius: 1.7rem;
+    }
+
+    .navbar-apphour .nav-link
+    {
+        font-size: 1.0rem;
+
+    }
+
+
 }
 
 @media screen and (max-width: 992px){
@@ -210,9 +238,17 @@ body{
         max-width: 25%;
         border-radius: 1.8rem;
     }
-}
 
 }
+
+@media screen and (min-width:992px){
+
+    .my-navbar{
+        padding-left: 25px;
+    }
+}
+
+
 
 .nav-item
 {
@@ -227,6 +263,9 @@ body{
 
 .navbar-apphour{
     z-index: 1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 .navbar-apphour .nav-link
 {
@@ -545,7 +584,7 @@ body{
 }
 
 #arco-azul{
-        max-width: 530px;
+    max-width: 530px;
     width: 80%;
     padding-bottom: 50px
 }
