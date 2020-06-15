@@ -6,9 +6,9 @@ var hdr = 76;
 
 $(window).scroll(function() {
     if( $(this).scrollTop() > (hdr) ) {
-      $(".navbar-apphour").css('background-color','#382f49');
+        $(".navbar-apphour").css('background-color','#382f49');
     } else {
-       $(".navbar-apphour").css('background-color','transparent');
+        $(".navbar-apphour").css('background-color','transparent');
     }
 });
 
@@ -43,15 +43,20 @@ $(document).ready(function() {
 $("#transicao-branco")
 
 window.onload = function() {
+    
     marginpercentual();
+    alinhaFotospessoas(window.innerWidth);
     planosAlinhamentos( window.innerWidth);
     imagemfooter();
+   
 };
 
 window.onresize = function(){
     marginpercentual();
-    imagemfooter();
+
+    alinhaFotospessoas(window.innerWidth);
     planosAlinhamentos(window.innerWidth);
+    imagemfooter();
 }
 
 
@@ -93,7 +98,7 @@ function planosAlinhamentos(larguratela){
     }
     else
     {
-         $('#planos').css('padding-left','15px');
+        $('#planos').css('padding-left','15px');
         var margintopBasico = $('#arco-vermelho').height();
         $("#divPlanoBasico").css("margin-top", (margintopBasico-150)+'px');
         $("#divPlanoPro").css("margin-top","50px");
@@ -115,5 +120,27 @@ function planosAlinhamentos(larguratela){
     }
 
 
+}
+
+
+function alinhaFotospessoas( larguraTela)
+{
+    larguraFoto = $('#foto-pessoas').width();
+    alturaFoto = $('#foto-pessoas').height();
+    if ( larguraTela > 992)
+    {
+        $("#foto-pessoas").css('max-width',"200%");
+    }else
+    {
+        $("#foto-pessoas").css('max-width',"100%");
+    }
+
+    if(larguraTela > 992)
+    {
+        $("#texto-proposito").css('padding-top',alturaFoto*0.3);
+    }else
+    {
+        $("#texto-proposito").css('padding-top','20px');
+    }
 }
 
