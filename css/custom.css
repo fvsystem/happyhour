@@ -215,7 +215,7 @@ html{
 @media screen and (max-width: 1000px) {
     .navbar-apphour .nvb-space-item {
         padding-left: 1rem !important;
-        padding-right: 2rem !important;
+        padding-right: 1rem !important;
     }
 
 
@@ -289,6 +289,7 @@ html{
     {
         font-size:  0.9rem;
     }
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -301,13 +302,13 @@ html{
 
     .navbar-expand-lg .navbar-nav .nav-link 
     {
-        padding-right: .3rem;
-        padding-left: .3rem;
+        padding-right: 0rem;
+        padding-left: 0rem;
     }    
     .navbar-apphour .nvb-space-item 
     {
-        padding-left: 1,5rem !important;
-        padding-right: 1.5rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
     }
 }
 
@@ -321,14 +322,14 @@ html{
 
     .navbar-expand-lg .navbar-nav .nav-link 
     {
-        padding-right: .2rem;
-        padding-left: .2rem;
+        padding-right: 0rem;
+        padding-left: 0rem;
     }
 
     .navbar-apphour .nvb-space-item 
     {
-        padding-left: 2rem !important;
-        padding-right: 2rem !important;
+        padding-left: 1.8rem !important;
+        padding-right: 1.8rem !important;
     }
 }
 
