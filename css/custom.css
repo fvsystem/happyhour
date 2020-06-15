@@ -2,6 +2,11 @@ body{
     background-color: #312F4A !important;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 100px 0 0 50px;
+}
+
 .no-gutters{
     /* background-image: url(../img/BG_linha.png);
     background-size: cover; */
@@ -254,7 +259,7 @@ body{
 .navbar-apphour .nav-link
 {
     color: #e73739;
-    text-shadow: 0 0 5px #e73739;
+    
 }
 
 
@@ -316,14 +321,14 @@ body{
 
     .navbar-expand-lg .navbar-nav .nav-link 
     {
-        padding-right: .4rem;
-        padding-left: .4rem;
+        padding-right: .2rem;
+        padding-left: .2rem;
     }
 
     .navbar-apphour .nvb-space-item 
     {
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
 }
 

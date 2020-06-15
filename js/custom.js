@@ -1,5 +1,4 @@
 /* NAVBAR */
-
 var  mn = $(".no-gutters");
 var  mns = "navbar-fixed-top";
 var hdr = 76; 
@@ -11,6 +10,9 @@ $(window).scroll(function() {
         $(".navbar-apphour").css('background-color','transparent');
     }
 });
+
+
+
 
 /* FIM NAVBAR*/
 
