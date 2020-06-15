@@ -201,17 +201,10 @@ body{
 /* ************************************* FIM BUTAO ANIMADO */
 
 
-
-@media screen and (min-width: 1200px) {
-    .navbar-apphour .nvb-space-item {
-        padding-left: 4rem !important;
-        padding-right: 4rem !important;
-    }
-
-    .nvb-btn{
-        border-radius: 1.7rem;
-    }
+.nvb-btn{
+    border-radius: 1.7rem;
 }
+
 
 
 @media screen and (max-width: 1000px) {
@@ -220,15 +213,6 @@ body{
         padding-right: 2rem !important;
     }
 
-    .nvb-btn{
-        border-radius: 1.7rem;
-    }
-
-    .navbar-apphour .nav-link
-    {
-        font-size: 1.0rem;
-
-    }
 
 
 }
@@ -271,9 +255,81 @@ body{
 {
     color: #e73739;
     text-shadow: 0 0 5px #e73739;
-    font-size: 1.2rem;
-
 }
+
+
+
+@media screen and (max-width: 575.98px)
+{
+    .navbar-apphour .nav-link
+    {
+        font-size: 1.0rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) 
+{ 
+
+    .navbar-apphour .nav-link
+    {
+        font-size:  0.9rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) 
+{
+    .navbar-apphour .nav-link
+    {
+        font-size:  0.9rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) 
+{
+    .navbar-apphour .nav-link
+    {
+        font-size: 0.9rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link 
+    {
+        padding-right: .3rem;
+        padding-left: .3rem;
+    }    
+    .navbar-apphour .nvb-space-item 
+    {
+        padding-left: 1,5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) 
+{
+    .nav-link
+    {
+        font-size: 1.0rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link 
+    {
+        padding-right: .4rem;
+        padding-left: .4rem;
+    }
+
+    .navbar-apphour .nvb-space-item 
+    {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+
+
+
+
 
 .navbar-apphour .nav-link:hover
 {
@@ -365,15 +421,21 @@ body{
     color: white;   
 }
 
-#projeto p, #projeto2 p
+#projeto p
 {
     font-size: 1.5em;
 }
 
+#projeto2 p
+{
+    font-size: 1.1em;
+}
+
+
 #projeto h1
 {
     font-family: 'Comfortaa', cursive;
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 #projeto2{
@@ -384,7 +446,7 @@ body{
 #projeto2 h2{
 
     font-family: 'Comfortaa', cursive;
-    font-size: 2.4em;
+    font-size: 1.8em;
     color: #e73739;
 }
 
