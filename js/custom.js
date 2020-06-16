@@ -5,7 +5,7 @@ var hdr = 76;
 
 $(window).scroll(function() {
     if( $(this).scrollTop() > (hdr) ) {
-        $(".navbar-apphour").css('background-color','#382f49');
+        $(".navbar-apphour").css('background-color','#221e35 ');
     } else {
         $(".navbar-apphour").css('background-color','transparent');
     }
@@ -80,13 +80,13 @@ function imagemfooter(){
 
 
 function planosAlinhamentos(larguratela){
-    if(larguratela > 576){
+    if(larguratela > 768){
 
-        var alturaPlanoPremium = $('#planoPREMIUM').innerHeight();
+        var alturaPlanoPro = $('#planoPRO').innerHeight();
         $('#planos').css('padding-left','15px');
 
-        $("#planoPRO").css('min-height',alturaPlanoPremium+'px');
-        $("#planoBASICO").css('min-height',alturaPlanoPremium+'px');
+      //  $("#planoPRO").css('min-height',alturaPlanoPremium+'px');
+        $("#planoBASICO").css('min-height',alturaPlanoPro+'px');
 
 
         if((larguratela < 1537) && (larguratela > 1100))
@@ -110,14 +110,14 @@ function planosAlinhamentos(larguratela){
         $("#planoBASICO").css('min-height',"0px");
     }
 
-    var larguraPlanoPremium = $('#planoPREMIUM').innerWidth();
+    var larguraPlanoPro = $('#planoPRO').innerWidth();
     var larguraElemento;
     var marginleft;
 
     var classList = document.getElementsByClassName("btn-amigo");
     for (var i = 0; i < classList.length; i++) {
         larguraElemento = classList[i].clientWidth;
-        marginleft = Math.round((larguraPlanoPremium/2)-(larguraElemento/2))
+        marginleft = Math.round((larguraPlanoPro/2)-(larguraElemento/2))
         $(classList[i]).css("margin-left",marginleft+"px");
     }
 
@@ -139,7 +139,7 @@ function alinhaFotospessoas( larguraTela)
 
     if(larguraTela > 992)
     {
-        $("#texto-proposito").css('padding-top',alturaFoto*0.3);
+        $("#texto-proposito").css('padding-top',alturaFoto*0.2);
     }else
     {
         $("#texto-proposito").css('padding-top','20px');
