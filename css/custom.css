@@ -102,7 +102,7 @@ html{
 {
     background-color: white;
     color:#221e35;
-    border-radius: 2rem 0 3.125rem 2rem;
+    border-radius: 2rem;
     margin-left: auto;
     display: block;
 }
@@ -438,6 +438,7 @@ html{
 #projeto p
 {
     font-size: 1.1em;
+    text-shadow: 1px 1px 2px #000;
 }
 
 #projeto2 p
