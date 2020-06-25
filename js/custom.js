@@ -147,7 +147,7 @@ function alinhaFotospessoas( larguraTela)
 
     if(larguraTela > 992)
     {
-        $("#texto-proposito").css('padding-top',alturaFoto*0.2);
+        $("#texto-proposito").css('padding-top',alturaFoto*0.3);
     }else
     {
         $("#texto-proposito").css('padding-top','20px');
