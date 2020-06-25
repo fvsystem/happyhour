@@ -107,6 +107,15 @@ html{
     display: block;
 }
 
+#btn-estabelecimento
+{
+    background-color: white;
+    color:#221e35;
+    border-radius: 2rem;
+    display: block;
+}
+
+
 .h2-happy{
     color:white;
     font-family: 'Comfortaa', cursive;
@@ -438,7 +447,7 @@ html{
 #projeto p
 {
     font-size: 1.1em;
-    text-shadow: 1px 1px 2px #000;
+  
 }
 
 #projeto2 p
