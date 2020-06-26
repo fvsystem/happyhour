@@ -31,14 +31,19 @@ html{
 @media only screen and (max-width: 1140px) {
     .no-gutters 
     {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
 
         > .col,
         > [class*="col-"] {
             padding-right: 0;
             padding-left: 0;
         }
+    }
+
+    #img-Header
+    {
+        padding-top: 70px;
     }
 }
 /* CONTAINER CUSTOMIZADO */
@@ -235,14 +240,22 @@ html{
     .navbar-nav .bubbly-button {
         max-width: 25%;
         border-radius: 1.8rem;
-    }
 
+    }
 }
+
+
+@media screen and (max-width: 720px){
+    .navbar-apphour {
+        background-color: #221e35;
+    } 
+}
+
 
 @media screen and (min-width:992px){
 
     .my-navbar{
-  /*      padding-left: 25px; */
+        /*      padding-left: 25px; */
     }
 }
 
@@ -298,7 +311,8 @@ html{
     {
         font-size:  0.9rem;
     }
-}
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -447,7 +461,7 @@ html{
 #projeto p
 {
     font-size: 1.1em;
-  
+
 }
 
 #projeto2 p
@@ -542,10 +556,10 @@ html{
 
 /*
 #planos li::before {
-    content: "• ";
-    color: red; /* or whatever color you prefer * /
-    font-size: 1.2em;
-    line-height: 1em;
+content: "• ";
+color: red; /* or whatever color you prefer * /
+font-size: 1.2em;
+line-height: 1em;
 }
 */
 
@@ -665,12 +679,14 @@ html{
         padding-top: 20px;
     }
 
-    #icone-footer {
+    #icone-footer 
+    {
         width: 70px;
         left: 30px;
     }
-
 }
+
+
 
 
 #arco-vermelho{
@@ -687,7 +703,7 @@ html{
 
 #foto-pessoas
 {
-   
+
     height: auto;
     width: auto; 
     padding-bottom: 40px
@@ -705,17 +721,30 @@ html{
     text-align: right;
 }
 
-@media only screen and (min-width: 768px) {
-   #proposito-text{
-    margin: -35px 0 50px 0;
-    text-align: right;
-} 
+
+
+
+@media only screen and (min-width: 992px) {
+
+
+    #proposito-text{
+        margin: -35px 0 50px 0;
+    } 
+
+
 }
 
+@media only screen and (max-width: 992px) {
+    #foto-pessoas {
+        padding-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
 
-@media only screen and (max-width: 768px) {
-   #proposito-text{
-    margin: 0px
-    text-align: right;
-} 
+    #proposito-text{
+        margin: -20px 0 10px 0;
+    } 
+
+
 }
