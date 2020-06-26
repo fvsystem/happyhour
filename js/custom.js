@@ -63,7 +63,7 @@ window.onresize = function(){
 }
 
 function conainerQuemSomos(largura){
-    if(largura < 992)
+    if(largura < 1140)
     {
         $( "#header").addClass( "container");
     }else
@@ -93,7 +93,7 @@ function planosAlinhamentos(larguratela){
     var alturaPlanoPro;
     var larguraPlano = $('#planoPRO').innerWidth();
 
-    if(larguratela > 768){
+    if(larguratela > 992){
 
 
         $('#planos').css('padding-left','15px');
@@ -103,22 +103,18 @@ function planosAlinhamentos(larguratela){
         $('#planoBASICO').css('padding-left',larguraPlano*0.19);
         $('#planoPRO').css('padding-left',larguraPlano*0.19);
 
-        if((larguratela < 1537) && (larguratela > 1100))
+        if((larguratela < 1537) && (larguratela > 1200))
         {
             $('#planos').css('padding-left','150px');
         }
-        else if((larguratela < 1099) && (larguratela > 577))
-        {
-            $('#planos').css('padding-left','190px');
-        }
+                
         alturaPlanoPro = $('#planoPRO').innerHeight();
         $("#planoBASICO").css('min-height',alturaPlanoPro+'px');
     }
     else
     {
         $('#planos').css('padding-left','15px');
-        var margintopBasico = $('#arco-vermelho').height();
-        $("#divPlanoBasico").css("margin-top", (margintopBasico-150)+'px');
+
         $("#divPlanoPro").css("margin-top","50px");
         $("#divPlanoPremium").css("margin-top","50px");
 

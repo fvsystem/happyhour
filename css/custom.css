@@ -225,6 +225,14 @@ html{
 }
 
 
+@media  screen and  (max-width: 768px){
+    .container {
+        max-width: 760px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
 
 @media screen and (max-width: 1000px) {
     .navbar-apphour .nvb-space-item {
@@ -290,38 +298,40 @@ html{
 {
     .navbar-apphour .nav-link
     {
-        font-size: 1.0rem;
+        font-size: 2.0rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) and (max-width: 767.98px) 
+@media screen and (min-width: 576px) and (max-width: 768px) 
 { 
 
     .navbar-apphour .nav-link
     {
-        font-size:  0.9rem;
+        font-size:  2rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) and (max-width: 991.98px) 
+@media screen and (min-width: 768px) and (max-width: 992px) 
 {
     .navbar-apphour .nav-link
     {
-        font-size:  0.9rem;
+        font-size:  2rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 
 }
 
 /* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) and (max-width: 1199.98px) 
+@media screen and (min-width: 992px) and (max-width: 1199px) 
 {
-    .navbar-apphour .nav-link
-    {
-        font-size: 0.9rem;
-    }
 
     .navbar-expand-lg .navbar-nav .nav-link 
     {
@@ -330,8 +340,8 @@ html{
     }    
     .navbar-apphour .nvb-space-item 
     {
-        padding-left: 0rem !important;
-        padding-right: 0rem !important;
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
     }
 }
 
@@ -703,7 +713,6 @@ line-height: 1em;
 
 #foto-pessoas
 {
-
     height: auto;
     width: auto; 
     padding-bottom: 40px
@@ -725,14 +734,13 @@ line-height: 1em;
 
 
 @media only screen and (min-width: 992px) {
-
-
     #proposito-text{
         margin: -35px 0 50px 0;
     } 
-
-
 }
+
+
+
 
 @media only screen and (max-width: 992px) {
     #foto-pessoas {
@@ -746,5 +754,14 @@ line-height: 1em;
         margin: -20px 0 10px 0;
     } 
 
-
 }
+
+@media only screen and (max-width: 1200px) {
+    #btn-estabelecimento{
+        margin-bottom: 120px;
+    } 
+}
+
+
+
+
