@@ -46,6 +46,35 @@ html{
         padding-top: 70px;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .container 
+    {
+        max-width: 900px !important;
+    }
+
+    .navbar-apphour {
+        min-height: 150px;
+    }
+}
+
+@media only screen and (min-width: 540px ) and (max-width: 789px) {
+    .container 
+    {
+        max-width: 760px !important;
+    }
+
+    .navbar-apphour {
+        min-height: 150px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .navbar-brand{
+        margin-top: 20px;
+    }
+
+}
 /* CONTAINER CUSTOMIZADO */
 
 
@@ -293,6 +322,20 @@ html{
 }
 
 
+.navbar-collapse{
+    padding: 15px 0;
+}
+
+
+@media only screen and (max-width:992px)
+{
+    .navbar-collapse
+    {
+        padding: 50px 0 !important;
+    }
+
+}
+
 
 @media screen and (max-width: 575.98px)
 {
@@ -340,8 +383,8 @@ html{
     }    
     .navbar-apphour .nvb-space-item 
     {
-    padding-left: .5rem !important;
-    padding-right: .5rem !important;
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
     }
 }
 
@@ -382,6 +425,23 @@ html{
     color: white;
     font-size: 7em;
 }
+
+@media only screen and (max-width: 992px) {
+    .title-home
+    {
+        font-size: 20em;
+    }
+
+    .text-home
+    {
+        font-size: 3em !important;    
+    }
+
+    .bubbly-button{
+        font-size: 3em !important;
+    }
+}
+
 
 
 .last-letter{
@@ -474,17 +534,62 @@ html{
 
 }
 
+#projeto h1
+{
+    font-family: 'Comfortaa', cursive;
+}
+
+
+@media only screen and (min-width: 992px)
+{
+
+    #projeto h1
+    {
+        font-family: 'Comfortaa', cursive;
+        font-size: 3em;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 992px)
+{
+
+
+    #projeto h1
+    {
+        font-size: 6.5em;
+    }
+
+    #praticidade
+    {
+        font-size: 7.5em !important;
+    }
+
+    #projeto h2
+    {
+        font-size: 5.5em !important;
+    }
+    
+    #projeto2 h2
+    {
+        font-size: 4.0em !important;
+    }
+    
+    #projeto2 p
+    {
+        font-size: 2.5em !important;
+    }
+    
+} 
+
 #projeto2 p
 {
     font-size: 1.1em;
 }
 
 
-#projeto h1
-{
-    font-family: 'Comfortaa', cursive;
-    font-size: 3em;
-}
 
 #projeto h2
 {
@@ -715,7 +820,8 @@ line-height: 1em;
 {
     height: auto;
     width: auto; 
-    padding-bottom: 40px
+    padding-bottom: 40px;
+    min-width: 100%;
 }
 
 #planoBASICO{
@@ -762,6 +868,55 @@ line-height: 1em;
     } 
 }
 
+
+.imageBGheader
+{
+    width:100%;
+    position:absolute;
+    top:20px;
+    left:0;
+    opacity:40%;
+    z-index: 0
+}
+
+#imgVamosFazer
+{
+    max-width: 250px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+#imgConectar
+{
+    max-width: 230px;
+    padding-top: 40px;
+}
+
+@media only screen and (max-width:992px)
+{
+    .imageBGheader
+    {
+        top:300px !important; 
+    }    
+
+    #proposito-text{
+        font-size: 2.5em !important;
+        text-align: justify;
+    }
+
+    #imgVamosFazer
+    {
+        max-width: 100% !important;
+    }
+
+    #imgConectar
+    {
+        max-width: 100% !important;
+        padding: 80px 0;
+        display: block;
+        margin-left: auto;
+    }
+}
 
 
 

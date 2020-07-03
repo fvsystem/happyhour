@@ -4,7 +4,7 @@ var  mns = "navbar-fixed-top";
 var hdr = 76; 
 
 $(window).scroll(function() {
-    if( $(this).scrollTop() > (hdr) ) {
+    if( $(this).scrollTop() > (hdr)) {
         $(".navbar-apphour").css('background-color','#221e35 ');
     } else if(window.innerWidth > 992) {
         $(".navbar-apphour").css('background-color','transparent');
