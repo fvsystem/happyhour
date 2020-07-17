@@ -120,8 +120,8 @@ function planosAlinhamentos(larguratela){
 
         $("#planoPRO").css('min-height',"0px");
         $("#planoBASICO").css('min-height',"0px");
-        $('#planoBASICO').css('padding-left',larguraPlano*0.15);
-        $('#planoPRO').css('padding-left',larguraPlano*0.15);
+        $('#planoBASICO').css('padding-left',larguraPlano*0.17);
+        $('#planoPRO').css('padding-left',larguraPlano*0.17);
     }
 
     var larguraPlanoPro = $('#planoPRO').innerWidth();
