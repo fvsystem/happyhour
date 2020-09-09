@@ -254,9 +254,9 @@ html{
 }
 
 
-@media  screen and  (max-width: 768px){
+@media  screen and  (max-width: 800px){
     .container {
-        max-width: 760px;
+        max-width: 800px;
         padding-left: 1px;
         padding-right: 1px;
     }
