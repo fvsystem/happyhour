@@ -716,7 +716,7 @@ line-height: 1em;
 
 /*  FORMULARIO CONTATO */
 .contact-form{
-
+    flex: 0 0 100%;
 }
 
 .contact-form .form-control::placeholder{
@@ -752,6 +752,22 @@ line-height: 1em;
     color: #fff;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 992px)
+{
+    .contact-form .btnContact {
+        padding: 1.5%;
+        font-size: 40px;
+    }
+    
+    .form-control{
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 3rem;
+    line-height: 3;
+}
+}
+
+
 .btnContactSubmit
 {
     width: 50%;
@@ -762,6 +778,9 @@ line-height: 1em;
     border: none;
     cursor: pointer;
 }
+
+
+
 
 /*  FIM FORMULARIO CONTATO */
 

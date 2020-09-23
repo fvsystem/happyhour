@@ -101,7 +101,7 @@ function planosAlinhamentos(larguratela){
         //  $("#planoPRO").css('min-height',alturaPlanoPremium+'px');
 
         $('#planoBASICO').css('padding-left',larguraPlano*0.19);
-        $('#planoPRO').css('padding-left',larguraPlano*0.19);
+        $('#planoPRO').css('padding-left',larguraPlano*0.37);
 
         if((larguratela < 1537) && (larguratela > 1200))
         {
