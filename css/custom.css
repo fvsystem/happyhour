@@ -762,7 +762,7 @@ line-height: 1em;
 	    
 	    .form-control{
 	    height: calc(1.5em + .75rem + 2px);
-	    font-size: 3rem;
+	    font-size: 2rem;
 	    line-height: 3;
 	    }
 }
