@@ -456,7 +456,15 @@ html{
     
 }
 
+@media only screen and (max-width: 992px) {
+    
+    #beneficios li{
+        font-size: 2.0em !important;
+        line-height: 1.5;
+    }
+    
 
+}
 
 .last-letter{
     color:#e73739;
